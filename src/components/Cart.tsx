@@ -8,11 +8,11 @@ import {
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
-} from './sheet';
-import { Separator } from './separator';
+} from './ui/sheet';
+import { Separator } from './ui/separator';
 import { formatPrice } from '@/lib/utils';
 import Link from 'next/link';
-import { buttonVariants } from './button';
+import { buttonVariants } from './ui/button';
 import Image from 'next/image';
 
 const Cart = () => {

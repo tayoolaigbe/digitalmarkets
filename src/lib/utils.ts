@@ -14,7 +14,7 @@ export function formatPrice(
 ) {
 	const { currency = 'GBP', notation = 'compact' } = options;
 	const numericPrice = typeof price === 'string' ? parseFloat(price) : price;
-	return Intl.NumberFormat('en-GB', {
+	return new Intl.NumberFormat('en-GB', {
 		style: 'currency',
 		currency,
 		notation,
